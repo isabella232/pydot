@@ -31,5 +31,8 @@ setup(	name = 'pydot',
         'Topic :: Software Development :: Libraries :: Python Modules'],
     long_description = "\n".join(pydot.__doc__.split('\n')),
     py_modules = ['pydot', 'dot_parser'],
-    install_requires = ['pyparsing', 'setuptools'],
+    install_requires = [
+        'pyparsing==1.5.6',
+        'setuptools',
+    ],
     data_files = [('.', ['LICENSE', 'README'])] )
